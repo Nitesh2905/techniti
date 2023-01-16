@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  background: rgb(132, 6, 50);
+  background: linear-gradient(
+    90deg,
+    rgba(132, 6, 50, 1) 0%,
+    rgba(250, 94, 249, 0.976890756302521) 60%
+  );
+}
+.homepage {
+  background-color: #010001;
+}
+.upper_home {
+  /* height: 100px; */
+}
+#background-video {
+  /* position: fixed; */
+  /* position: absolute; */
+  top: 0;
+  height: 750px;
+  z-index: -1;
+  width: 100%;
+  background-color: #010001;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  #background-video {
+    /* width: 750px; */
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  #background-video {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.techniti-text {
+  font-family: "Josefin Sans", sans-serif;
+  background: #e645cb;
+  background: linear-gradient(to right, #e645cb 16%, #ff1fa5 55%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.para-text {
+  font-family: "Poppins", sans-serif;
+}
+
+.textsection {
+  /* background: url("../files/banner.png");ba */
+  background-size: cover;
+  position: relative;
+  /* opacity: 0.8; */
+  /* background-color: #313131; */
+}
+
+.textsection::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+footer {
+  background-color: #010001;
+  color: white;
+}
+
+.eventsPage {
+  background: rgb(255, 83, 143);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 83, 143, 1) 0%,
+    rgba(94, 232, 250, 0.976890756302521) 62%
+  );
+}
