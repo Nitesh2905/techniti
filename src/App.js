@@ -14,6 +14,11 @@ import Mathematics from "./Events/Mathematics";
 import Robohunt from "./Events/Robohunt";
 import Microrobowar from "./Events/Microrobowar";
 import TrickyCircuits from "./Events/TrickyCircuits";
+import ThreeBHK from "./Events/ThreeBHK";
+import UAVDrone from "./Events/UAVDrone";
+import RCcars from "./Events/RCcars";
+import Robowar from "./Events/Robowar";
+import Avishkar from "./Events/Avishkar";
 function App() {
   return (
     <>
@@ -33,6 +38,11 @@ function App() {
           <Route path="/robohunt" element={<Robohunt />} exact />
           <Route path="/microrobowar" element={<Microrobowar />} exact />
           <Route path="/trickycircuits" element={<TrickyCircuits />} exact />
+          <Route path="/threebhk" element={<ThreeBHK />} exact />
+          <Route path="/uavdrone" element={<UAVDrone />} exact />
+          <Route path="/rccars" element={<RCcars />} exact />
+          <Route path="/robowar" element={<Robowar />} exact />
+          <Route path="/avishkar" element={<Avishkar />} exact />
         </Routes>
       </Router>
     </>

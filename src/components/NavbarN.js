@@ -17,6 +17,7 @@ const NavbarN = () => {
             alt="technitilogo"
           />
         </Link> */}
+        <h1 className="text-2xl mr-10"> techNITi</h1>
         <div
           onClick={() => setOpen(!open)}
           className="text-3xl absolute right-8 top-6 

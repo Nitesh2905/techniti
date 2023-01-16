@@ -33,12 +33,36 @@ const registerLinks = [
   {
     hackathon: "https://www.nitj.ac.in/events_registration/hackmol/login",
   },
+  {
+    chemecar: "https://l01vlmq5gan.typeform.com/to/zGwKjZLG",
+  },
+  {
+    chemedesign: "https://l01vlmq5gan.typeform.com/to/zGwKjZLG",
+  },
+  {
+    prayaas: "https://l01vlmq5gan.typeform.com/to/zGwKjZLG",
+  },
+  {
+    maths: "https://l01vlmq5gan.typeform.com/to/zGwKjZLG",
+  },
+  {
+    robohunt: "https://l01vlmq5gan.typeform.com/to/zGwKjZLG",
+  },
+  {
+    microrobowar: "https://l01vlmq5gan.typeform.com/to/zGwKjZLG",
+  },
+
+  {
+    trickycircuits: "https://l01vlmq5gan.typeform.com/to/zGwKjZLG",
+  },
 ];
 
 const Events = () => {
   useEffect(() => {
     AOS.init();
   }, []);
+
+  console.log("link" + registerLinks[1].chemecar);
 
   return (
     <div className="p-5  mx-auto justify-center gap-8 flex flex-wrap eventsPage">
@@ -63,7 +87,12 @@ const Events = () => {
         data-aos-easing="ease-in-sine"
         data-aos-duration="600"
       >
-        <EventsCard Imgsrc={Chassisside} EventName="Chem-E-Car" prize="10000" />{" "}
+        <EventsCard
+          Imgsrc={Chassisside}
+          EventName="Chem-E-Car"
+          prize="10000"
+          link={registerLinks[1].chemecar}
+        />{" "}
       </Link>
       <Link
         to="/chemedesign"
@@ -77,44 +106,102 @@ const Events = () => {
           prize="10000"
         />
       </Link>
-      <Link to="/prayaas">
-        {" "}
+      <Link
+        to="/prayaas"
+        data-aos="fade-up"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="600"
+      >
         <EventsCard Imgsrc={prayaas} EventName="Prayass" prize="3000" />
       </Link>
-      <Link to="/maths">
+      <Link
+        to="/maths"
+        data-aos="fade-right"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="600"
+      >
         <EventsCard Imgsrc={gaNIT} EventName="Integration Bee" prize="5500" />
       </Link>
-      <Link to="/robohunt">
+      <Link
+        to="/robohunt"
+        data-aos="fade-down"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="600"
+      >
         <EventsCard Imgsrc={robohunt} EventName="RoboHunt" prize="3000" />
       </Link>
-      <Link to="/microrobowar">
-        {" "}
+      <Link
+        to="/microrobowar"
+        data-aos="fade-up"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="600"
+      >
         <EventsCard
           Imgsrc={microrobowar}
           EventName="MicroRoboWar"
           prize="8000"
+          data-aos="fade-right"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="600"
         />
       </Link>
 
-      <Link to="/trickycircuits">
+      <Link
+        to="/trickycircuits"
+        data-aos="fade-up"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="600"
+      >
         <EventsCard
           Imgsrc={trickycircuits}
           EventName="TrickyCircuits"
           prize="5000"
         />
       </Link>
-      <EventsCard Imgsrc={UAVdrone} EventName="UAV Drone" prize="" />
-      <EventsCard Imgsrc={robowars} EventName="Robo Wars" prize="" />
-      <EventsCard Imgsrc={RCcars} EventName="RC Cars" prize="" />
-      <EventsCard
-        Imgsrc={atv}
-        EventName="Exhibition by Team Avishkar"
-        prize="None"
-      />
+      <Link
+        to="/threebhk"
+        data-aos="fade-up"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="600"
+      >
+        <EventsCard Imgsrc={tBHK} EventName="3BHK" prize="Momentos & Goodies" />
+      </Link>
+      <Link
+        to="/uavdrone"
+        data-aos="fade-up"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="600"
+      >
+        <EventsCard Imgsrc={UAVdrone} EventName="UAV Drone" prize="" />
+      </Link>
+      <Link to="/robowar">
+        <EventsCard Imgsrc={robowars} EventName="Robo Wars" prize="" />
+      </Link>
+      <Link to="/rccars">
+        <EventsCard Imgsrc={RCcars} EventName="RC Cars" prize="" />
+      </Link>
+      <Link
+        to="/avishkar"
+        data-aos="fade-up"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="600"
+      >
+        <EventsCard
+          Imgsrc={atv}
+          EventName="Exhibition by Team Avishkar"
+          prize="None"
+        />
+      </Link>
 
-      <EventsCard Imgsrc={tBHK} EventName="3BHK" prize="Momentos & Goodies" />
       <EventsCard Imgsrc={LumentRace} EventName="LumentRace" prize="10500" />
-      <EventsCard Imgsrc={smarttank} EventName="SmartTank" prize="4500" />
+      <EventsCard
+        data-aos="fade-up"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="600"
+        Imgsrc={smarttank}
+        EventName="SmartTank"
+        prize="4500"
+      />
       <EventsCard Imgsrc={boltbolt} EventName="Bolt-Bolt" prize="10500" />
     </div>
   );
