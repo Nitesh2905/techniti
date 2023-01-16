@@ -85,8 +85,8 @@
 .footer {
   background-color: #010001;
   color: white;
-  height: 25rem;
-  padding: 100px;
+  /* height: 18rem; */
+  padding: 2rem;
 }
 
 .eventsPage {

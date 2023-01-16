@@ -41,9 +41,9 @@ const NavbarN = () => {
           <li className="md:ml-8 md:my-0 my-7">
             <Link to="/about">About Us</Link>
           </li>
-          <li className="md:ml-8 md:my-0 my-7">
+          {/* <li className="md:ml-8 md:my-0 my-7">
             <Link to="/team">Our Team</Link>
-          </li>
+          </li> */}
           {/* <button className="bg-indigo-200 text-white py-2 px-6 rounded md:ml-8 ">btn</button> */}
         </ul>
       </nav>

@@ -91,7 +91,7 @@ const Home = () => {
           prizes for winners are as exciting as the competitions. We thus invite
           you to complement us in our celebration of technology.
         </p>
-        <h2
+        {/* <h2
           data-aos="fade-up"
           data-aos-easing="ease-in-sine"
           data-aos-duration="700"
@@ -103,7 +103,7 @@ const Home = () => {
           data-aos="fade-up"
           data-aos-easing="ease-in-sine"
           data-aos-duration="700"
-          className="text-neutral-100 md:mt-10  top-10 leading-7  px-5 relative  para-text text-center"
+          className="text-neutral-100 md:mt-10  top-10 leading-7 text-sm px-5 relative  para-text text-center"
         >
           The city of Jalandhar is situated between the rivers Sutlej and Beas
           on NH-1. It is one of the important towns of Punjab It is an
@@ -113,40 +113,53 @@ const Home = () => {
           on GT Road ByPass at a distance of 14 Km from Jalandhar city railway
           station and 15 Km from Jalandhar Cantt railway station Auto rickshaw
           and taxi services are available regularly from the railway station.
-        </p>
+        </p> */}
       </div>
       <div className="footer">
         <h2
           data-aos="fade-up"
           data-aos-easing="ease-in-sine"
           data-aos-duration="700"
-          className="text-4xl text-center relative top-3"
+          className="text-4xl text-center relative"
         >
           Contact Us
         </h2>
-        <div className="flex flex-wrap justify-between  ">
-          <div>
-            <div className="flex flex-col">
-              <AiFillMail />
+        <div className="flex flex-wrap justify-between px-4 mt-2  ">
+          <div className="flex flex-col justify-center items-center gap-2">
+            <div className="flex justify-center items-center gap-2">
+              <AiFillMail className="text-white text-4xl" />
               <p>technitij@nitj.ac.in</p>
             </div>
-            <div>
-              <AiOutlineMobile /> 9795331310(M)
+            <div className="flex justify-center items-center gap-2">
+              <AiOutlineMobile className="text-white text-4xl" />
+              9795331310(M)
             </div>
           </div>
-          <ul className="flex flex-wrap justify-between gap-5">
+          <div className="">
+            Address: Dr B R Ambedkar National Institute of Technology G.T. Road,
+            <br />
+            Amritsar Bypass, Jalandhar (Punjab), India - 144027 <br />
+            Tel : +91-0181-5037855, 2690301, 2690453, 3082000
+          </div>
+          <ul className="flex justify-between gap-5 ">
             <li className="text-white text-4xl">
-              <a>
+              <a
+                href="https://www.instagram.com/techniti_nitj/"
+                target="_blank"
+              >
                 <AiFillInstagram />
               </a>
             </li>
             <li className="text-white text-4xl">
-              <a>
+              <a href="" target="_blank">
                 <AiFillFacebook />
               </a>
             </li>
             <li className="text-white text-4xl">
-              <a>
+              <a
+                href="https://www.linkedin.com/in/technitij2k23/"
+                target="_blank"
+              >
                 <AiFillLinkedin />
               </a>
             </li>
