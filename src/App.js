@@ -10,6 +10,10 @@ import Chemical2 from "./Events/Chemical2";
 import NavbarN from "./components/NavbarN";
 
 import Prayaas from "./Events/Prayaas";
+import Mathematics from "./Events/Mathematics";
+import Robohunt from "./Events/Robohunt";
+import Microrobowar from "./Events/Microrobowar";
+import TrickyCircuits from "./Events/TrickyCircuits";
 function App() {
   return (
     <>
@@ -25,6 +29,10 @@ function App() {
           <Route path="/chemedesign" element={<Chemical1 />} exact />
           <Route path="/chemecar" element={<Chemical2 />} exact />
           <Route path="/prayaas" element={<Prayaas />} exact />
+          <Route path="/maths" element={<Mathematics />} exact />
+          <Route path="/robohunt" element={<Robohunt />} exact />
+          <Route path="/microrobowar" element={<Microrobowar />} exact />
+          <Route path="/trickycircuits" element={<TrickyCircuits />} exact />
         </Routes>
       </Router>
     </>

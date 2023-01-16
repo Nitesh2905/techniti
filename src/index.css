@@ -13,15 +13,17 @@
 }
 
 .navbar {
-  background: rgb(132, 6, 50);
+  /* background: rgb(132, 6, 50);
   background: linear-gradient(
     90deg,
     rgba(132, 6, 50, 1) 0%,
     rgba(250, 94, 249, 0.976890756302521) 60%
-  );
+  ); */
+  z-index: 5;
 }
 .homepage {
   background-color: #010001;
+  height: 100vh;
 }
 .upper_home {
   /* height: 100px; */
@@ -80,9 +82,11 @@
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-footer {
+.footer {
   background-color: #010001;
   color: white;
+  height: 25rem;
+  padding: 100px;
 }
 
 .eventsPage {

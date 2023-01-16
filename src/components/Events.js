@@ -81,10 +81,28 @@ const Events = () => {
         {" "}
         <EventsCard Imgsrc={prayaas} EventName="Prayass" prize="3000" />
       </Link>
-      <EventsCard Imgsrc={gaNIT} EventName="Integration Bee" prize="5500" />
-      <EventsCard Imgsrc={robohunt} EventName="RoboHunt" prize="3000" />
-      <EventsCard Imgsrc={microrobowar} EventName="MicroRoboWar" prize="8000" />
+      <Link to="/maths">
+        <EventsCard Imgsrc={gaNIT} EventName="Integration Bee" prize="5500" />
+      </Link>
+      <Link to="/robohunt">
+        <EventsCard Imgsrc={robohunt} EventName="RoboHunt" prize="3000" />
+      </Link>
+      <Link to="/microrobowar">
+        {" "}
+        <EventsCard
+          Imgsrc={microrobowar}
+          EventName="MicroRoboWar"
+          prize="8000"
+        />
+      </Link>
 
+      <Link to="/trickycircuits">
+        <EventsCard
+          Imgsrc={trickycircuits}
+          EventName="TrickyCircuits"
+          prize="5000"
+        />
+      </Link>
       <EventsCard Imgsrc={UAVdrone} EventName="UAV Drone" prize="" />
       <EventsCard Imgsrc={robowars} EventName="Robo Wars" prize="" />
       <EventsCard Imgsrc={RCcars} EventName="RC Cars" prize="" />
@@ -96,11 +114,6 @@ const Events = () => {
 
       <EventsCard Imgsrc={tBHK} EventName="3BHK" prize="Momentos & Goodies" />
       <EventsCard Imgsrc={LumentRace} EventName="LumentRace" prize="10500" />
-      <EventsCard
-        Imgsrc={trickycircuits}
-        EventName="TrickyCircuits"
-        prize="5000"
-      />
       <EventsCard Imgsrc={smarttank} EventName="SmartTank" prize="4500" />
       <EventsCard Imgsrc={boltbolt} EventName="Bolt-Bolt" prize="10500" />
     </div>
