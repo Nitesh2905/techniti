@@ -1,0 +1,62 @@
+export const data = [
+  {
+    key: 1,
+    name: "Hackathon",
+    prize: 60000,
+    Imgsrc: require("./files/hackathon.jpg"),
+    link: "https://www.nitj.ac.in/events_registration/hackmol/login",
+    visit: "https://hackmol.tech/",
+    desc: "HackMOL is the flagship annual 30-hour hackathon being organised by Google Developer Student (GDSC) of NIT Jalandhar....",
+  },
+  {
+    key: 2,
+    name: "chemecar",
+    prize: 60000,
+    Imgsrc: require("./files/hackathon.jpg"),
+    link: "https://l01vlmq5gan.typeform.com/to/zGwKjZLG",
+    visit: "chemecar",
+  },
+  {
+    key: 3,
+    name: "chemedesign",
+    prize: 60000,
+    Imgsrc: require("./files/hackathon.jpg"),
+    link: "https://l01vlmq5gan.typeform.com/to/zGwKjZLG",
+  },
+  {
+    key: 4,
+    name: "prayaas",
+    prize: 60000,
+    Imgsrc: require("./files/hackathon.jpg"),
+    link: "https://l01vlmq5gan.typeform.com/to/zGwKjZLG",
+  },
+  {
+    key: 5,
+    name: "gaNIT",
+    prize: 60000,
+    Imgsrc: require("./files/hackathon.jpg"),
+    link: "https://l01vlmq5gan.typeform.com/to/zGwKjZLG",
+  },
+  {
+    key: 6,
+    name: "robohunt",
+    prize: 60000,
+    Imgsrc: require("./files/hackathon.jpg"),
+    link: "https://l01vlmq5gan.typeform.com/to/zGwKjZLG",
+  },
+  {
+    key: 7,
+    name: "microrobowar",
+    prize: 60000,
+    Imgsrc: require("./files/hackathon.jpg"),
+    link: "https://l01vlmq5gan.typeform.com/to/zGwKjZLG",
+  },
+
+  {
+    key: 8,
+    name: "trickycircuits",
+    prize: 60000,
+    Imgsrc: require("./files/hackathon.jpg"),
+    link: "https://l01vlmq5gan.typeform.com/to/zGwKjZLG",
+  },
+];

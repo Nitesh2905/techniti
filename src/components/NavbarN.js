@@ -47,42 +47,6 @@ const NavbarN = () => {
           {/* <button className="bg-indigo-200 text-white py-2 px-6 rounded md:ml-8 ">btn</button> */}
         </ul>
       </nav>
-      {/* <nav className="h-15 font-bold text-black text-lg">
-
-      
-      <Navbar bg="dark" variant="dark" collapseOnSelect expand="lg">
-        <Container>
-          <LinkContainer to="/">
-            <Navbar.Brand>
-              <img
-                src={logo}
-                width="15%"
-                className="relative right-20"
-                alt="technitilogo"
-              />
-            </Navbar.Brand>
-          </LinkContainer>
-
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ml-auto">
-              <LinkContainer to="/">
-                <Nav.Link href="/" className="text-black">
-                  Home
-                </Nav.Link>
-              </LinkContainer>
-
-              <LinkContainer to="/events">
-                <Nav.Link className="text-black">Events</Nav.Link>
-              </LinkContainer>
-              <LinkContainer to="/about">
-                <Nav.Link className="text-black">About Us</Nav.Link>
-              </LinkContainer>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-      </nav>- */}
     </>
   );
 };

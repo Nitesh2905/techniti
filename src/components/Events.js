@@ -17,56 +17,26 @@ import atv from "../files/atv.jpg";
 import heatexchanger from "../files/heatexchanger.jpg";
 import tBHK from "../files/3bhk.jfif";
 import { Link } from "react-router-dom";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 import bgimg from "../files/webbg.jpg";
 
-// const images = [
-//   {
-//     robohunt,
-
-//   },
-
-// ];
-
-const registerLinks = [
-  {
-    hackathon: "https://www.nitj.ac.in/events_registration/hackmol/login",
-  },
-  {
-    chemecar: "https://l01vlmq5gan.typeform.com/to/zGwKjZLG",
-  },
-  {
-    chemedesign: "https://l01vlmq5gan.typeform.com/to/zGwKjZLG",
-  },
-  {
-    prayaas: "https://l01vlmq5gan.typeform.com/to/zGwKjZLG",
-  },
-  {
-    maths: "https://l01vlmq5gan.typeform.com/to/zGwKjZLG",
-  },
-  {
-    robohunt: "https://l01vlmq5gan.typeform.com/to/zGwKjZLG",
-  },
-  {
-    microrobowar: "https://l01vlmq5gan.typeform.com/to/zGwKjZLG",
-  },
-
-  {
-    trickycircuits: "https://l01vlmq5gan.typeform.com/to/zGwKjZLG",
-  },
-];
+import { data } from "../data";
 
 const Events = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
-  console.log("link" + registerLinks[1].chemecar);
-
   return (
     <div className="p-5  mx-auto justify-center gap-8 flex flex-wrap eventsPage">
-      <a
+      {data.map((item) => (
+        <EventsCard
+          key={item.key}
+          Imgsrc={item.Imgsrc}
+          EventName={item.name}
+          link={item.link}
+          prize={item.prize}
+          visit={item.visit}
+          desc={item.desc}
+        />
+      ))}
+      {/* <a
         data-aos="fade-right"
         data-aos-easing="ease-in-sine"
         data-aos-duration="600"
@@ -92,7 +62,7 @@ const Events = () => {
           EventName="Chem-E-Car"
           prize="10000"
           link={registerLinks[1].chemecar}
-        />{" "}
+        />
       </Link>
       <Link
         to="/chemedesign"
@@ -202,7 +172,7 @@ const Events = () => {
         EventName="SmartTank"
         prize="4500"
       />
-      <EventsCard Imgsrc={boltbolt} EventName="Bolt-Bolt" prize="10500" />
+      <EventsCard Imgsrc={boltbolt} EventName="Bolt-Bolt" prize="10500" /> */}
     </div>
   );
 };

@@ -25,9 +25,9 @@ const Home = () => {
   }, []);
   return (
     <div className="homepage">
-      <video id="background-video" autoPlay loop muted>
+      {/* <video id="background-video" autoPlay loop muted>
         <source src={video1} type="video/mp4" />
-      </video>
+      </video> */}
 
       <div className="h-full w-full md:mt-6 absolute top-0 flex flex-col justify-center items-center sm:text-5xl sm:mb-10 ">
         <h1

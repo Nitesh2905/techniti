@@ -90,15 +90,4 @@
 }
 
 .eventsPage {
-  /* background: rgb(255, 83, 143);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 83, 143, 1) 0%,
-    rgba(94, 232, 250, 0.976890756302521) 62%
-  ); */
-  background-image: url("./files/giphy.gif");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 0 8%;
 }
