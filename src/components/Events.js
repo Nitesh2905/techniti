@@ -24,7 +24,7 @@ import { data } from "../data";
 
 const Events = () => {
   return (
-    <div className="p-5  mx-auto justify-center gap-8 flex flex-wrap eventsPage">
+    <div className="p-5  mx-auto justify-center gap-8 flex flex-wrap eventsPage bg-neutral-800 ">
       {data.map((item) => (
         <EventsCard
           key={item.key}
